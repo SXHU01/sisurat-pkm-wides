@@ -1,0 +1,51 @@
+// 
+// faqs.scss
+// 
+
+.faqs-accordion {
+    .accordion-item {
+        border-bottom: none;
+        margin-bottom: 12px;
+        border-radius: 6px;
+        box-shadow: $box-shadow-sm;
+        .accordion-header {
+            .accordion-button {
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                box-shadow: none !important;
+                color: $dark;
+                font-size: 17px;
+                font-weight: $font-weight-medium;
+                &.collapsed {
+                    border-radius: 6px;
+                    color: $gray-700;
+                    &:before {
+                        color: $gray-700;
+                        transform: rotate(0deg);
+                    }
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+                &::after {
+                    display: none;
+                }
+                &:before {
+                    content: "\F0140";
+                    display: inline-block;
+                    font: normal normal normal 24px/1 "Material Design Icons";
+                    font-size: 22px;
+                    color: $dark;
+                    position: absolute;
+                    right: 20px;
+                    transform: rotate(180deg);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            .accordion-button:not(.collapsed) {
+                background-color: darken($gray-200, 3%);
+                color: $dark;
+            }
+        }
+    }
+}

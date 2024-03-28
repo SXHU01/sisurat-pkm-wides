@@ -1,0 +1,39 @@
+// 
+// screenshot.scss
+// 
+
+.screen-slider {
+    padding: 50px 0;
+    .swiper-slide {
+        position: relative;
+        border-radius: 8px;
+        opacity: 0.3;
+        transition: all 0.3s ease-in-out;
+        img {
+            border-radius: 8px;
+        }
+        border: 2px solid $gray-200;
+        &.swiper-slide-active {
+            transform: scale(1.1);
+            box-shadow: $box-shadow;
+            opacity: 1;
+        }
+        &.swiper-slide-prev, 
+        &.swiper-slide-next {
+            opacity: 0.8;
+        }
+    }
+    .swiper-pagination {
+        bottom: -30px;
+        .swiper-pagination-bullet {
+            background-color: $primary;
+            vertical-align: middle;
+            &.swiper-pagination-bullet-active {
+                height: 12px;
+                width: 12px;
+                border: 2px solid $white;
+                box-shadow: 0px 0px 0 1px $primary;
+            }
+        }
+    }    
+}

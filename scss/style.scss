@@ -1,0 +1,47 @@
+
+
+/* Theme Name: Appexy - Responsive bootsrap 5 Landing Page Template
+   Author: Coderthemes
+   Version: 1.2.0
+   Created: Nov 2018
+   File Description: Main Css file of the template
+*/
+
+/************************
+01.General
+02.Loader
+03.Helper
+04.Components
+05.Menu
+06.Footer
+07.Multipurpose Layout
+08.Contact
+09.Agency Layout
+10.Startup layout
+11.Business Layout
+12.Software Layout
+12.App Layout
+13.Default
+************************/
+
+//Fonts
+@import "fonts";
+
+@import "variables";
+@import "utilities";
+@import "general";
+@import "avatar";
+@import "helper";
+@import "components";
+@import "menu";
+@import "footer";
+@import "contact";
+@import "app-layout";
+@import "heros";
+@import "how-it-work";
+@import "features";
+@import "cta";
+@import "counter";
+@import "screenshot";
+@import "pricing";
+@import "faqs";

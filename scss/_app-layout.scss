@@ -1,0 +1,57 @@
+// 
+// Agency Layout
+// 
+
+
+.hero-1 {
+    background-color: $primary;
+    padding: 170px 0 0px;
+    background-image: url("../images/heros/hero-1-bg.png");
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    .hero-title {
+        font-size: 48px;
+        line-height: 1.25;
+    }
+    .hero-content {
+        padding-bottom: 100px;
+    }
+    .down-arrow-btn {
+        position: relative;
+        z-index: 1;
+        .down-arrow {
+            background-color: $white;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            position: absolute;
+            bottom: 0px;
+            margin-bottom: 6%;
+            box-shadow: 0px 5px 20px 0px rgba($dark, 0.1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// responsive 
+@media (max-width: 991.98px) {
+    .hero-1 {
+        background-color: $primary;
+        padding: 110px 0 0px;
+    }
+}
+
+
+

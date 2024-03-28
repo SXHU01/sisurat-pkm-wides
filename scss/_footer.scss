@@ -1,0 +1,64 @@
+// 
+// Footer
+// 
+
+.footer {
+    position: relative;
+    padding: 80px 0 30px;
+    .footer-nav {
+        li {
+            padding: 6px 0;
+            .footer-link {
+                color: rgba($white, 0.6);
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                &::after {
+                    content: "";
+                    background-color: $primary;
+                    position: absolute;
+                    top: 14px;
+                    left: 0;
+                    height: 5px;
+                    width: 0px;
+                    border-radius: 10px;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                    color: $white;
+                    padding-left: 12px;
+                    &::after {
+                        width: 05px;
+                    }
+                }
+            }
+        }
+    }
+    &.bg-dark {
+        background-image: url("../images/footer-light-bg.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .footer-social-icon {
+        height: 36px;
+        width: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgba($white, 0.1);
+        color: $white;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 0px 0 0px rgba($white, 0.1);
+        &:hover {
+            background-color: $white;
+            color: $primary;
+            box-shadow: 0px 0px 0 4px rgba($white, 0.1);
+        }
+    }
+}
+
+
+.footer-tagline {
+    background-color: rgba($dark, 0.9);
+}

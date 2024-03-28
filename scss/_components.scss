@@ -1,0 +1,136 @@
+// 
+// Components
+// 
+
+.btn {
+    padding: 8px 24px;
+    border: 1px solid;
+    font-size: 16px;
+    transition: all 0.5s;
+    font-family: $font-primary;
+    // box-shadow: none !important;
+    &.btn-sm {
+        padding: 6px 16px;
+    }
+    &.btn-lg {
+        padding: 12px 28px;
+        font-size: 17px;
+    }
+    @each $color,
+    $value in $theme-colors {
+        &.btn-#{$color} {
+            background-color: #{$value} !important;
+            border: 1px solid #{$value} !important;
+            color: $white !important;
+            &:hover,
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
+                background-color: #{darken($value, 4%)} !important;
+                border:1px solid #{darken($value, 4%)} !important;
+                box-shadow: 0px 8px 12px 0px rgba($value, .25);
+            }
+        }
+        &.btn-outline-#{$color} {
+            border: 1px solid #{$value} !important;
+            color: #{$value} !important;
+            &:hover,
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
+                background-color: $value !important;
+                color: $white !important;
+                box-shadow: 0px 8px 12px 0px rgba($value, .25);
+            }
+        }
+
+        // btn gradient
+        &.btn-gradient-#{$color} {
+            background: linear-gradient(to right, $value 0%, lighten($value, 25%) 100%);
+            border: none;
+            color: $white;
+            box-shadow: 0 5px 20px rgba($gray-900, .1);
+        }
+    }
+
+
+
+    &.btn-light,
+    &.btn-white {
+        background-color: $white;
+        border: 1px solid $white;
+        color: $primary !important;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: darken($white, 7%) !important;
+            border-color: darken($white, 7%) !important;
+        }
+    }
+    &.btn-outline-light,
+    &.btn-outline-white {
+        border: 1px solid $white !important;
+        color: $white !important;
+        text-transform: uppercase;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: $white;
+            color: $dark !important;
+        }
+    }
+}
+
+// Modal-box
+.modal {
+    .video-modal {
+        border: 0;
+        background-color: transparent;
+        .video-box {
+            position: relative;
+        }
+        video {
+            border-radius: 8px;
+        }
+        .btn-close {
+            width: 26px;
+            height: 26px;
+            background-color: rgba($white, 0.5);
+            border-radius: 6px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            opacity: 0;
+            z-index: 3;
+            video {
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        &:hover {
+            .btn-close {
+                opacity: 0.5;
+            }
+        }
+    }
+    .btn-close {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+
+// Card
+
+.card {
+    border: none;
+    box-shadow: $box-shadow;
+}

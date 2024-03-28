@@ -1,0 +1,34 @@
+// 
+// utilities.scss
+// 
+
+
+@each $color, $value in $theme-colors {
+    // bg color
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+
+    // bg-soft color
+    .bg-soft-#{$color} {
+        background-color: rgba(($value), 0.15) !important;
+    }
+
+    // border color
+    .border-#{$color} {
+        border-color: $value !important;
+    }
+
+    // text color
+    .text-#{$color} {
+        color: $value !important;
+    }
+
+    .shadow-#{$color} {
+        box-shadow: 0px 5px 14px rgba($value, 0.08);
+    }
+}
+
+.text-muted {
+    color: $text-muted !important;
+}

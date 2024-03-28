@@ -1,0 +1,59 @@
+// 
+// Contact
+// 
+
+.custom-form {
+    .form-control {
+        height: 45px;
+        padding: 0.375rem 1.1rem;
+        font-size: 14px;
+        border-width: 2px;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    textarea{
+        &.form-control{
+            height: auto;
+        }
+    }
+}
+
+.form-control{
+    border-color: darken($gray-200, 2%);
+    &:focus {
+        border-color: $gray-400;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+    &::placeholder {
+        font-size: 15px;
+        color: lighten($gray-500, 5%);
+    }
+}
+
+label {
+    &.form-label {
+        font-size: 15px;
+        font-family: $font-secondary;
+        font-weight: 500;
+        color: $gray-600;
+    }
+}
+.form-check-label {
+    font-size: 15px;
+    font-family: $font-secondary;
+}
+
+.contact-icon {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 20px;
+}

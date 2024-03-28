@@ -1,0 +1,12 @@
+// 
+// counter.scss
+// 
+
+.counter-content {
+    background-color: rgba($white, 0.1);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba($white, 0.2);
+    box-shadow: $box-shadow;
+}

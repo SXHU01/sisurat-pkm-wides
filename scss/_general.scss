@@ -1,0 +1,46 @@
+// 
+// General
+// 
+
+
+body {
+    font-family: $font-primary;
+    font-size: $base-font;
+    color: $gray-900;
+    padding-right: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-secondary;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+    color: $primary;
+}
+
+p {
+    line-height: 1.7;
+}
+
+html {
+    scroll-padding-top: 59px; /* height of sticky header */
+  }
+
+.row > * {
+    position: relative;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+

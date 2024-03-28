@@ -1,0 +1,69 @@
+// 
+// variables.scss
+// 
+
+// Color variables
+
+$white:               #fff;
+$gray-100:            #f8f9fa;
+$gray-200:            #eff1f5;
+$gray-300:            #e2e7f1;
+$gray-400:            #ced4da;
+$gray-500:            #7c8bad;
+$gray-600:            #6c757d;
+$gray-700:            #536976;
+$gray-800:            #292E49;
+$gray-900:            #343a40;
+$black:               #000;
+
+$blue:                #1f61eb;
+$green:               #1ce1ac;
+$cyan:                #4bbbce;
+$yallow:              #ffc212;
+$red:                 #eb1f52;
+
+
+$primary:             $blue;
+$secondary:           $gray-700;
+$info:                $cyan;
+$warning:             $yallow;
+$success:             $green;
+$danger:              $red;
+$light:               $gray-100;
+$dark:                $gray-900;
+$white:               $white;
+
+
+$theme-colors: (
+    "primary":        $primary,
+    "secondary":      $secondary,
+    "info":           $info,
+    "warning":        $warning,
+    "success":        $success,
+    "danger":         $danger,
+    "dark":           $dark,
+    "light":          $light,
+    "white":          $white,
+);
+
+$bg-overlay:         #10161e;
+
+$text-muted:         $gray-600;
+
+$base-font: 16px;
+
+$font-primary:          'Mandali', sans-serif;
+$font-secondary:        "Cerebri Sans,sans-serif";
+
+
+// font-weight
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+
+// box-shadow
+$box-shadow-sm:               0 4px 8px rgba($gray-900, 0.08);
+$box-shadow:                  0 5px 20px rgba($gray-900, .1);
+$box-shadow-lg:               0 5px 20px rgba($gray-900, .2);
